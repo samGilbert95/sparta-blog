@@ -1,49 +1,36 @@
-<p id="notice"><%= notice %></p>
+<div class="index">
+  <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>User:</strong>
-  <%= @blog.user.full_name %>
-</p>
+  <h2>
+    <strong></strong>
+    <%= @blog.title %>
+  </h2>
 
-<p>
-  <strong>Title:</strong>
-  <%= @blog.title %>
-</p>
+  <h4>
+    by: <%= @blog.user.full_name %>
+  </h4>
 
-<p>
-  <%= @blog.body %>
-</p>
+  <p>
+    <%= @blog.body %>
+  </p>
 
-<p>
-  <strong>Image:</strong>
-  <%= @blog.image %>
-</p>
-
-<%= link_to 'Edit', edit_blog_path(@blog) %> |
-<%= link_to 'Back', blogs_path %>
-
-<br>
-
-<%= link_to 'New Comment', new_blog_comment_path(@blog) %>
-
-<ul class="list-group">
-<% @blog.comments.each do  |comment|%>
-  <li class="list-group-item"><%= comment.user.full_name %>
-    <br>
-    <%= link_to comment.body, edit_blog_comment_path(@blog,comment) %></li>
-<% end  %>
-</ul>
+  <p>
+    <%= image_tag @blog.image %>
+  </p>
 
 
-<!-- <table class='table'>
-  <th>Users</th>
-  <th>Comment</th>
-<tr>
-  <td>
-    <%#= comment.user.full_name %>
-  </td>
-  <td>
-    <%#= comment.body %>
-  </td>
-</tr>
-</table> -->
+  <%= link_to 'Edit', edit_blog_path(@blog) %> |
+  <%= link_to 'Back', blogs_path %>
+
+  <br>
+
+  <%= link_to 'New Comment', new_blog_comment_path(@blog) %>
+
+  <ul class="list-group">
+  <% @blog.comments.each do  |comment|%>
+    <li class="list-group-item"><%= comment.user.full_name %>
+      <br>
+      <%= link_to comment.body, edit_blog_comment_path(@blog,comment) %></li>
+  <% end  %>
+  </ul>
+</div>

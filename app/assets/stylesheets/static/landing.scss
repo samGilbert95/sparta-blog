@@ -1,3 +1,12 @@
+body{
+  background: lightgray;
+}
+
+nav{
+  position: sticky;
+  top: 0px;
+}
+
 .jumbotron{
   background: url('jumboBack.jpeg');
   background-size: cover;
@@ -12,14 +21,23 @@
   padding: 0px;
 }
 
-h2{
+.land{
   position: absolute;
-  top: 450px;
-  left: 600px;
+  top: 440px;
+  left: 580px;
 }
 
-p{
-  position: absolute;
-  top: 550px;
-  left: 555px;
+.index{
+  h1,a{
+    text-align: center;
+    align-items: center;
+    color: #006CFF;
+  }
+  margin: 23%;
+  margin-top: 5%;
+  width: 80%;
+  background: white;
+  padding: 50px;
+  align-items: center;
+  text-align: center;
 }

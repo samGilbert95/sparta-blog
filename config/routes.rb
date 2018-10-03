@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   root 'static#landing'
-  resources :users
+  resources :users do
+    resources :comments
+  end
   resources :blogs do
     resources :comments
   end

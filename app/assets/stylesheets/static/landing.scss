@@ -1,0 +1,43 @@
+body{
+  background: lightgray;
+}
+
+nav{
+  position: sticky;
+  top: 0px;
+}
+
+.jumbotron{
+  background: url('jumboBack.jpeg');
+  background-size: cover;
+  height: 94vh;
+  width: 100vw;
+  overflow: hidden;
+  margin-bottom: 0px;
+}
+
+.container{
+  margin: 0px;
+  padding: 0px;
+}
+
+.land{
+  position: absolute;
+  top: 440px;
+  left: 580px;
+}
+
+.index{
+  h1,a{
+    text-align: center;
+    align-items: center;
+    color: #006CFF;
+  }
+  margin: 23%;
+  margin-top: 5%;
+  width: 80%;
+  background: white;
+  padding: 50px;
+  align-items: center;
+  text-align: center;
+}
